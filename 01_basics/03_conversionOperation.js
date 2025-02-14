@@ -9,8 +9,14 @@ let valueInNumber = Number(score)
 
 
 // "33" => 33
-// "33abc" => NaN
+/*
+ "33abc" => NaN (not a number, but type will
+be converted to number)
+*/
 //  true => 1; false => 0
+
+// null => 0 
+// undefined =>NaN
 
 let isLoggedIn = "hitesh"
 
@@ -37,7 +43,7 @@ let negValue = -value
 // console.log(2-2);
 // console.log(2*2);
 // console.log(2**3);
-// console.log(2/3);
+// console.log(2/3); in decimal 
 // console.log(2%3);
 
 let str1 = "hello"
@@ -46,14 +52,20 @@ let str2 = " hitesh"
 let str3 = str1 + str2
 // console.log(str3);
 
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log("1" + 2); :12" : string
+// console.log(1 + "2"); "12" : string
+// console.log("1" + 2 + 2); : "12"+2 -> "122"
+// console.log(1 + 2 + "2"); : 3+"2"-> "32"
+
+/* ---> operands are computed two at a time 
+and then final result depend on this only 
+if atleast a string is there as an operand then 
+string concatenation is there"
+*/
 
 // console.log( (3 + 4) * 5 % 3);
 
-// console.log(+true);
+// console.log(+true); + before does the conversion to number 
 // console.log(+"");
 
 let num1, num2, num3

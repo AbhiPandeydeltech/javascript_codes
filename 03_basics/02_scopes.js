@@ -27,13 +27,13 @@ function one(){
 
 }
 
-// one()
+one()
 
 if (true) {
     const username = "hitesh"
     if (username === "hitesh") {
         const website = " youtube"
-        // console.log(username + website);
+        console.log(username + website);
     }
     // console.log(website);
 }
@@ -43,7 +43,7 @@ if (true) {
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
-
+//hoisting here too 
 console.log(addone(5))
 
 function addone(num){
@@ -56,3 +56,7 @@ addTwo(5)
 const addTwo = function(num){
     return num + 2
 }
+
+/* first function will run properly but the second will result into error (irrespective of 
+const,let,var)
+*/
